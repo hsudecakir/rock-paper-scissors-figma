@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/rock-paper-scissors.js" defer></script>
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>ROCK <br> PAPER <br> SCISSORS</p>
+      <div class="score-board">
+        <p>SCORE</p>
+        <p id="scoreCounter">0</p>
+      </div>
+    </div>
+    <div class="moves" id="userMoves">
+      <div class="user-move">
+        <p class="text--desktop">YOU PICKED</p>
+        <img src="assets/images/winner-shadow.png" id="winnerUser" class="winner-shadow winner-shadow--left image--mobile">
+        <img src="assets/images/winner-shadow--desktop.png" id="winnerUserDesktop" class="winner-shadow--left image--desktop">
+        <img class="winner-shadow winner-shadow--right image--mobile" src="assets/images/winner-shadow.png" id="winnerComp">
+        <img class="winner-shadow winner-shadow--right image--desktop" src="assets/images/winner-shadow--desktop--right.svg" id="winnerCompDesktop">
+        <img src="assets/images/img-box.svg" id="userMoveIcon" class="image--mobile img-box">
+        <img src="assets/images/img-box--desktop.svg" id="userMoveIconDesktop" class="image--desktop img-box--desktop">
+        <p class="text--mobile">YOU PICKED</p>
+      </div>
+      <div class="play-button play-button--desktop" id="playBtnContainerDesktop">
+        <p id="resultDesktop"></p>
+        <button id="playBtnDesktop">PLAY AGAIN</button>
+      </div>
+      <div class="computer-move">
+        <p class="text--desktop">THE HOUSE PICKED</p>
+        <img src="assets/images/img-box.svg" id="compMoveIcon" class="image--mobile img-box">
+        <img src="assets/images/img-box--desktop.svg" id="compMoveIconDesktop" class="image--desktop img-box--desktop">
+        <p class="text--mobile">THE HOUSE PICKED</p>
+      </div>
+    </div>
+    <div class="play-button" id="playBtnContainer">
+      <p id="result">YOU LOSE</p>
+      <button id="playBtn">PLAY AGAIN</button>
+    </div>
+    <div class="users-choice" id="usersChoice">
+      <div class="users-choice--top">
+        <div class="users-choice--paper">
+          <img id="paperBtn" src="assets/images/paper.svg" class="image--mobile">
+          <div class="users-choice--paper--desktop" id="paperBtnDesktop">
+            <img src="assets/images/paper--desktop.svg" class="image--desktop image--paper">
+            <img src="assets/images/hover-shadow.png" class="hover-shadow--paper">
+          </div>
+        </div>
+        <div class="users-choice--scissors">
+          <img id="scissorsBtn" src="assets/images/scissors.svg" class="image--mobile">
+          <div class="users-choice--scissors--desktop" id="scissorsBtnDesktop">
+            <img src="assets/images/scissors--desktop.svg" class="image--desktop image--scissors">
+            <img src="assets/images/hover-shadow.png" class="hover-shadow--scissors">
+          </div>
+        </div>
+        <img src="assets/images/triangle.svg" class="triangle-shadow image--mobile">
+        <img src="assets/images/triangle--desktop.svg" class="triangle-shadow image--desktop">
+      </div>
+      <div class="users-choice--bottom">
+        <div class="users-choice--rock">
+          <img id="rockBtn" src="assets/images/rock.svg" class="image--mobile">
+          <div class="users-choice--rock--desktop" id="rockBtnDesktop">
+            <img src="assets/images/rock--desktop.svg" class="image--desktop image--rock">
+            <img src="assets/images/hover-shadow.png" class="hover-shadow--rock">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <button id="rulesBtn">RULES</button>
+    </div>
+    <div id="opacityBg" class="opacity"></div>
+  </div>
+  <div class="rules-container" id="rulesPage">
+    <div class="rules__header">
+      <h1>RULES</h1>
+    <div class="exit-icon exit-icon--desktop">
+      <img id="exitIconDesktop" src="assets/images/exit-icon.svg">
+    </div>
+    </div>
+    <div class="rules-images">
+      <div class="rules-images--top">
+        <img src="assets/images/paper-rules.svg">
+        <div class="arrow">
+          <p>BEATS</p>
+          <img src="assets/images/arrow.svg">
+        </div>
+        <div class="arrow arrow--left">
+          <p>BEATS</p>
+          <img src="assets/images/arrow.svg">
+        </div>
+        <div class="arrow arrow--right">
+          <p>BEATS</p>
+          <img src="assets/images/arrow.svg">
+        </div>
+        <img src="assets/images/scissors-rules.svg">
+      </div>
+      <div class="rules-images--bottom">
+        <img src="assets/images/rock-rules.svg">
+      </div>
+    </div>
+    <div class="exit-icon exit-icon--mobile">
+      <img id="exitIconMobile" src="assets/images/exit-icon.svg">
+    </div>
+  </div>
+</body>
+</html>
